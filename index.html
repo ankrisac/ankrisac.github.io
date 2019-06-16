@@ -1,9 +1,215 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    Hello Github!
-  </body>
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                padding: 0;
+                margin: 0;
+                border: 0;
+
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #banner{
+                width: 100%;
+                height: 95%;
+
+                color: white;
+                font-size: 400%; 
+                text-shadow: gray 5px 5px;
+                text-align: center;
+
+                background: seagreen;
+
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+
+                animation: backFluid;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+
+            @media only screen and (min-width: 800px){
+                #banner{
+                    height: 60%;
+                    font-size: 600%;
+                }
+            }
+
+            @keyframes backFluid{
+                0% { 
+                    background-color: seagreen;
+                }
+                25% { 
+                    background-color: blue;
+                }
+                50% { 
+                    background-color: orangered;
+                }
+                75% { 
+                    background-color: magenta;
+                }
+            }
+
+            #nav-bar{
+                height: 5%;
+            
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                
+                box-shadow: darkslategray 0px 5px 5px;
+
+                position: sticky;
+                top: 0px;
+            }
+            .nav-elem{
+                display: flex;
+                flex: 0 1 150px;
+
+                align-items: center;
+                justify-content: center;
+
+                background: black;
+                color: white;
+                
+                opacity: 0.8;
+                transition: opacity 0.55s;
+                text-decoration: none;
+            }
+            .nav-elem:hover{
+                opacity: 0.9;
+            }
+            .nav-elem:active{
+                opacity: 0.8;
+            }
+            .nav-spacer{
+                flex: 3 1 auto;
+            }
+            .nav-spacer:hover{
+                opacity: 0.8;   
+            }
+
+
+            .card{
+                background: lightgray;
+                color: darkslategray;
+                
+                padding: 10px;
+                border-radius: 10px;
+
+                box-shadow: slategray 0px 3px 5px 3px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <header>PolyCrystal</header>
+        </div>
+        <div id="nav-bar">
+            <div class="nav-elem nav-spacer"></div>
+            <a href="#banner" class="nav-elem"> Back </a>
+            <a href="#Info" class="nav-elem"> Info </a>
+            <a href="#Projects" class="nav-elem"> Projects </a>
+            <a href="#About" class="nav-elem"> About </a>
+            <div class="nav-elem nav-spacer"></div>
+        </div>
+    
+
+        <div style="padding: 10px">
+            <div id="Info" style="height: 5%"></div>
+            <article class="card">
+                <p> Info </p>
+
+                <p style="font-size: 150%"> This website is a Work in Progress </p>
+
+
+                <p> Eckfeldt (June 15, 1769 – February 6, 1852) was the second chief
+                coiner of the United States Mint. His father owned a large smithy
+                and involved himself in early attempts at American coinage.
+                Eckfeldt built early presses for the Mint, engraved some of its
+                early dies, and was responsible for some designs of early American
+                copper pieces, as well as the 1792 half disme, which some 
+                authorities consider the first United States coin. He was appointed 
+                assistant coiner of the Mint in 1796, and became chief coiner after 
+                his predecessor's death in 1814. During Eckfeldt's tenure, the 
+                Philadelphia Mint moved to new premises and expanded its operations. 
+                Setting aside unusual coins that were brought in as bullion, 
+                he started the Mint's coin cabinet, which evolved into the National
+                Numismatic Collection. Despite his 1839 retirement, Eckfeldt
+                continued performing the duties of chief coiner until his death,
+                though his successor, Franklin Peale, bore the title. </p>
+            </article>
+
+            <div id="Projects" style="height: 5%"></div>
+            <article class="card">
+                <p> Projects </p>
+            
+                <p> Eckfeldt (June 15, 1769 – February 6, 1852) was the second chief
+                coiner of the United States Mint. His father owned a large smithy
+                and involved himself in early attempts at American coinage.
+                Eckfeldt built early presses for the Mint, engraved some of its
+                early dies, and was responsible for some designs of early American
+                copper pieces, as well as the 1792 half disme, which some 
+                authorities consider the first United States coin. He was appointed 
+                assistant coiner of the Mint in 1796, and became chief coiner after 
+                his predecessor's death in 1814. During Eckfeldt's tenure, the 
+                Philadelphia Mint moved to new premises and expanded its operations. 
+                Setting aside unusual coins that were brought in as bullion, 
+                he started the Mint's coin cabinet, which evolved into the National
+                Numismatic Collection. Despite his 1839 retirement, Eckfeldt
+                continued performing the duties of chief coiner until his death,
+                though his successor, Franklin Peale, bore the title. </p>
+            
+                <p> Eckfeldt (June 15, 1769 – February 6, 1852) was the second chief
+                coiner of the United States Mint. His father owned a large smithy
+                and involved himself in early attempts at American coinage.
+                Eckfeldt built early presses for the Mint, engraved some of its
+                early dies, and was responsible for some designs of early American
+                copper pieces, as well as the 1792 half disme, which some 
+                authorities consider the first United States coin. He was appointed 
+                assistant coiner of the Mint in 1796, and became chief coiner after 
+                his predecessor's death in 1814. During Eckfeldt's tenure, the 
+                Philadelphia Mint moved to new premises and expanded its operations. 
+                Setting aside unusual coins that were brought in as bullion, 
+                he started the Mint's coin cabinet, which evolved into the National
+                Numismatic Collection. Despite his 1839 retirement, Eckfeldt
+                continued performing the duties of chief coiner until his death,
+                though his successor, Franklin Peale, bore the title. </p>
+            </article>
+            
+            <div id="About" style="height: 5%"></div>
+            <article id="About" class="card">
+                <p> About </p>
+
+                <p> Eckfeldt (June 15, 1769 – February 6, 1852) was the second chief
+                coiner of the United States Mint. His father owned a large smithy
+                and involved himself in early attempts at American coinage.
+                Eckfeldt built early presses for the Mint, engraved some of its
+                early dies, and was responsible for some designs of early American
+                copper pieces, as well as the 1792 half disme, which some 
+                authorities consider the first United States coin. He was appointed 
+                assistant coiner of the Mint in 1796, and became chief coiner after 
+                his predecessor's death in 1814. During Eckfeldt's tenure, the 
+                Philadelphia Mint moved to new premises and expanded its operations. 
+                Setting aside unusual coins that were brought in as bullion, 
+                he started the Mint's coin cabinet, which evolved into the National
+                Numismatic Collection. Despite his 1839 retirement, Eckfeldt
+                continued performing the duties of chief coiner until his death,
+                though his successor, Franklin Peale, bore the title. </p>
+            </article>
+            <br>
+        </div>
+    
+        <script>
+
+        </script>
+    
+    </body>
 </html>
